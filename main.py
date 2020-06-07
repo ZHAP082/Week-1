@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
 f = open('Galaxy1 (4).txt','r')
 list_make = f.readlines()
 
@@ -31,5 +34,13 @@ for i in Mass_data_n:
     Mass_data.append(Just_data)
 
 #Making arrays for each thing
+
+Radias_data_array = np.array(Radias_data)
+velocity_data_array = np.array(velocity_data)
+change_in_radias_data_array = np.array(change_in_radias_data)
+change_in_velocity_data_array = np.array(change_in_velocity_data)
+Mass_data_array = np.array (Mass_data)
+
+
 
 
