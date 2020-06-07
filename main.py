@@ -70,7 +70,7 @@ plt.plot(Radias_data_array,velocity_data_array)
 
 plt.xlabel ('Radias / kpc')
 plt.ylabel ('velocity / km/s')
-plt.title ('Velocity (Blue) and Predicted Velocity as a function of radias')
+plt.title ('Velocity (Blue) and Predicted (Orange) Velocity as a function of radias')
 #plt.show() Since we want to plot 2 lines on same graph with theses axis tis plt.show() needed to be after the other plot is made.
 
 #Q.7 - Finding predicted velocity from each radias and making into array (done automatically since we used previous arrays to make it.-  
