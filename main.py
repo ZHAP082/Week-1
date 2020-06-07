@@ -70,8 +70,25 @@ plt.plot(Radias_data_array,velocity_data_array)
 
 plt.xlabel ('Radias / kpc')
 plt.ylabel ('velocity / km/s')
-plt.title ('Velocity as a function of radias')
+plt.title ('Velocity (Blue) and Predicted Velocity as a function of radias')
+#plt.show() Since we want to plot 2 lines on same graph with theses axis tis plt.show() needed to be after the other plot is made.
+
+#Q.7 - Finding predicted velocity from each radias and making into array (done automatically since we used previous arrays to make it.-  
+# v_predicted = sqr((G*Mc) / r)
+#For Mc and r are in Galaxy.txt
+#G = 4.30×10^−6 kpc/M⊙ (km/s)2 for the scales I am using.
+
+velocity_predicted_array = np.sqrt(((4.30*10**-6)*Mass_data_array)/Radias_data_array)
+
+#Q.8 - Plotting pv(r) (pv = y and r = x) on the same axes as v(x)
+
+plt.plot(Radias_data_array,velocity_predicted_array)
 plt.show()
+#No need for diffrent labels since same as previous plot. I changed title so it inclues both v and predicted v.
+
+
+
+
 
 
 
