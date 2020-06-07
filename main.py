@@ -1,6 +1,7 @@
+#Importing
 import numpy as np
 import matplotlib.pyplot as plt
-
+#Making each thing in the file into separate lists where each elemnt is float.
 f = open('Galaxy1 (4).txt','r')
 list_make = f.readlines()
 
@@ -63,6 +64,14 @@ change_in_radias_data_array = np.array(change_in_radias_data)
 change_in_velocity_data_array = np.array(change_in_velocity_data)
 Mass_data_array = np.array(Mass_data)
 
+# Q.6 Ploting Graph v(r) = velocity (y) as a function of radias (x)
+
+plt.plot(Radias_data_array,velocity_data_array)
+
+plt.xlabel ('Radias / kpc')
+plt.ylabel ('velocity / km/s')
+plt.title ('Velocity as a function of radias')
+plt.show()
 
 
 
