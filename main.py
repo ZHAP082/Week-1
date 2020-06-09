@@ -66,7 +66,7 @@ Mass_data_array = np.array(Mass_data)
 
 # Q.6 Ploting Graph v(r) = velocity (y) as a function of radias (x)
 
-plt.plot(Radias_data_array,velocity_data_array)
+plt.plot(Radias_data_array,velocity_data_array, label = 'Data')
 
 plt.xlabel ('Radias / kpc')
 plt.ylabel ('velocity / km/s')
@@ -82,7 +82,8 @@ velocity_predicted_array = np.sqrt(((4.30*10**-6)*Mass_data_array)/Radias_data_a
 
 #Q.8 - Plotting pv(r) (pv = y and r = x) on the same axes as v(x)
 
-plt.plot(Radias_data_array,velocity_predicted_array)
+plt.plot(Radias_data_array,velocity_predicted_array, label = 'Visual mass')
+plt.legend(['Data','Visual mass'])
 plt.show()
 #No need for diffrent labels since same as previous plot. I changed title so it inclues both v and predicted v.
 
